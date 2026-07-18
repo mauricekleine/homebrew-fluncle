@@ -14,28 +14,28 @@
 class Fluncle < Formula
   desc "Drum & bass bangers from another dimension — the Fluncle CLI"
   homepage "https://www.fluncle.com"
-  version "0.162.0"
+  version "0.163.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/mauricekleine/fluncle/releases/download/v#{version}/fluncle-darwin-arm64"
-      sha256 "88bd43a3bed47ad3e895757fec189899d8ab1783a29f25ebe10d95007f64b6bd"
+      sha256 "1d8703f7f0b7916041d1671a30fb9146e991ee04c8e549d8b0496028ecfe28af"
     end
     on_intel do
       url "https://github.com/mauricekleine/fluncle/releases/download/v#{version}/fluncle-darwin-x64"
-      sha256 "2b5ffc65826935076d32cb4cc39b65386e4bf67f37f4a77455521acd3b8f42ef"
+      sha256 "b02d253ce4c511969ec6584efa964a238b7c54cb165f820453751caf65ca542d"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/mauricekleine/fluncle/releases/download/v#{version}/fluncle-linux-arm64"
-      sha256 "23b492a683002605595edb30b10922674f1834444914d597d01fa97dc902d530"
+      sha256 "594b8b6cd431b8eeb6878ef6172fc5862f562262c6bc681d536284eb09d1d183"
     end
     on_intel do
       url "https://github.com/mauricekleine/fluncle/releases/download/v#{version}/fluncle-linux-x64"
-      sha256 "c5d229399fc23ee15a753bccc308ad134d5b5e71a2b1d0133d94aff9c1e1cb7d"
+      sha256 "fd5e7a856b10518fca45fb59b3ecca08dad2f53edbb3600d93c513340b782ffd"
     end
   end
 
