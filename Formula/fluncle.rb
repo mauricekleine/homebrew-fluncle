@@ -12,30 +12,32 @@
 # with the checksum of the matching release asset (see README for a one-liner,
 # or use `brew bump-formula-pr`).
 class Fluncle < Formula
-  desc "Drum & bass bangers from another dimension — the Fluncle CLI"
+  # A colon, not an em dash: `brew info fluncle` prints this to a stranger, and VOICE.md §6
+  # sanctions exactly one em dash (the `Artist — Title` tracklist separator).
+  desc "Drum & bass bangers from another dimension: the Fluncle CLI"
   homepage "https://www.fluncle.com"
-  version "0.222.0"
+  version "0.223.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/mauricekleine/fluncle/releases/download/v#{version}/fluncle-darwin-arm64"
-      sha256 "3daa31f24f3c9a26bea5fdaf9fb9fe34417f7f4df1aaeb0ebc32436d6fa4b2f8"
+      sha256 "64d9509dc8e26fea2769ce26903fff8465f9f10e9550c8148cf3f50f15139c72"
     end
     on_intel do
       url "https://github.com/mauricekleine/fluncle/releases/download/v#{version}/fluncle-darwin-x64"
-      sha256 "20d877e92a8bd210b9287fcec7d3d15f2895f31cf307bc5694eeda6b17d26b01"
+      sha256 "e2b146e056c2eb70185a5fb2b2f67c52791442db77e4b13f35ef4b7d9112235f"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/mauricekleine/fluncle/releases/download/v#{version}/fluncle-linux-arm64"
-      sha256 "c2a7519e5d09cf81806d8ddfd5b65b2d14be417f4049bebd29fa17f2a3124efe"
+      sha256 "39a6391cc43f0b3a278b357f573104f6c6c43645e20ebbe70931abf5a4f82ca2"
     end
     on_intel do
       url "https://github.com/mauricekleine/fluncle/releases/download/v#{version}/fluncle-linux-x64"
-      sha256 "1b89d114b13951f5e3d0cb760a2056305b1f3e07df16e46679fb974c0ecc9193"
+      sha256 "9d512e09f2285cb12c5652cbea930e23cebe40b48d99e2f7ce4387d8fef8ec75"
     end
   end
 
