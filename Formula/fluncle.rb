@@ -16,28 +16,28 @@ class Fluncle < Formula
   # sanctions exactly one em dash (the `Artist — Title` tracklist separator).
   desc "Drum & bass bangers from another dimension: the Fluncle CLI"
   homepage "https://www.fluncle.com"
-  version "0.262.0"
+  version "0.263.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/mauricekleine/fluncle/releases/download/v#{version}/fluncle-darwin-arm64"
-      sha256 "a1e9f6e1e68f1dbc50164d2a65a3f0250a2a7ad0dae41f08e6c28426ef35b19d"
+      sha256 "868427188ab689f3e2058fb767e7df1ed50b070344ab167693f4dac794242d9d"
     end
     on_intel do
       url "https://github.com/mauricekleine/fluncle/releases/download/v#{version}/fluncle-darwin-x64"
-      sha256 "97588faa72f476a238796fd854db04e95a205bc60e86d92d69a71003f275ba91"
+      sha256 "dbeeae50db8a3323b4537677d07033d8c521296a5dd59aebdd4cb8f03891e2a5"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/mauricekleine/fluncle/releases/download/v#{version}/fluncle-linux-arm64"
-      sha256 "0f411e92fb0673d5a4cf759596c752b6d74f6ba71202a647186e7dd88a3a7ea2"
+      sha256 "43b2d271deb83b282d7c4a259a658ad149ea6ab84110b34092a5ccfe8c161471"
     end
     on_intel do
       url "https://github.com/mauricekleine/fluncle/releases/download/v#{version}/fluncle-linux-x64"
-      sha256 "0686bf2d0c703f8606f154ec132f4c4e0834ba22dec2f362cb42ae1a425073f6"
+      sha256 "5fd1f18d27676c2bc712087242fc63cc3e7d290730792ad8be6a68cbcbd0e2d0"
     end
   end
 
